@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8"/>
+<title>SurveyForm</title>
+<link rel= "stylesheet" href="RegistrationForm.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Please Enter name Here"required/></label>
+      <label for="email" id="email-label"> Email: <input type="email" id="email" placeholder="Please enter your Email" required/>
+      <label for="number" id="number-label"> Age: <input type="number" id="number" min="17" max="60" placeholder="Age"></label>
+    </fieldset>
+    <fieldset>
+      <label for=dropdown> which option describes your present role? <select name="role" id="dropdown">
+        <option value="">select your role</option>
+        <option value="1">Full time study</option>
+        <option value="2">Part-time study</option>
+        <option value="3">Employment</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="option"></label>How would you recommend this service to friends?
+        <input type="radio" class="inline" name="option" value="sure"/> Sure
+        <input type="radio" class="inline" name="option" value="maybe"/> Maybe
+        <input type="radio" class="inline" name="option" value="not at all"/> Not at all
+      </fieldset>
+
+    <fieldset>
+      <label for="couserselection">Which couser you liked most to study?
+        <input type="checkbox" class="inline" value="html" name="couserselection" checked/> HTML
+        <input type="checkbox" class="inline" value="css" name="couserselection" /> CSS
+        <input type="checkbox" class="inline" value="JavaScript" name="couserselection"/> JavaScript
+    </fieldset>
+        <label for="feedback"> Any suggestions? 
+        <textarea name="feedbackinfo" placeholder="Please enter your suggestions here" id="feedback" cols="30" rows="3"></textarea>
+        </label>
+          
+    <input type="submit" id="submit" vaule="submit">
+  </form>
+</body>
+</html>
